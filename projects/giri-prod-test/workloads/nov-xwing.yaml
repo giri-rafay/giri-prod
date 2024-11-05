@@ -12,3 +12,4 @@ spec:
   namespace: nov-nginx
   placement:
     selector: rafay.dev/clusterName=giri-prod-nov5
+  version: nov-xwing-v1-202411050811460000
