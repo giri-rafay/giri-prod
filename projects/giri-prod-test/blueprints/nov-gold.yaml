@@ -1,0 +1,51 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: nov-gold
+  project: giri-prod-test
+spec:
+  base:
+    name: default-aks
+    version: 2.11.0
+  componentsCriticality:
+  - name: opa-policy
+  - name: network-policy
+  - name: cost-profile
+  costProfile:
+    name: default-cost-profile-azure
+    version: version-1730783110
+  customAddons:
+  - name: nov-addon-xwing
+    version: v1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  drift:
+    action: Deny
+    enabled: true
+  driftWebhook:
+    enabled: true
+  namespaceConfig:
+    enableSync: true
+    syncType: Unmanaged
+  networkPolicy:
+    policies:
+    - name: mar-cp
+      version: v1
+    profile:
+      name: default
+      version: latest
+  opaPolicy:
+    opaPolicy:
+    - name: giri-opa-policy
+      version: v1
+    profile:
+      name: default
+      version: latest
+  type: golden
+  version: v1
