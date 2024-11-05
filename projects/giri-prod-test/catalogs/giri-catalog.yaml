@@ -1,0 +1,9 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Catalog
+metadata:
+  name: giri-catalog
+  project: giri-prod-test
+spec:
+  autoSync: true
+  repository: default-bitnami
+  type: HelmRepository
