@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  annotations:
+    rafay.dev/audit_type: BROWSER||Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+      AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+    rafay.dev/audit_user: giridharaprasad@rafay.co
+    rafay.dev/audit_user_group: Organization Admins
+  name: nov-addon-test-xwing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/nov-addon-test-xwing/http-sw-app.yaml
+    type: Yaml
+  namespace: nov-addon
+  sharing: {}
+  version: v1

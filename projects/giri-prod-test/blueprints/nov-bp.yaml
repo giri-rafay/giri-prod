@@ -1,0 +1,9 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: nov-bp
+  project: giri-prod-test
+spec:
+  driftWebhook:
+    enabled: true
+  type: custom
