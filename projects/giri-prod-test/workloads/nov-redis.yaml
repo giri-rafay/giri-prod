@@ -16,3 +16,4 @@ spec:
   namespace: nov-nginx
   placement:
     selector: rafay.dev/clusterName=giri-prod-nov5
+  version: nov-redis-v2-202411050833190000
