@@ -1,0 +1,14 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: nov-xwing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/nov-xwing/nov-xwing.yaml
+    type: Yaml
+  namespace: nov-nginx
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-nov5
