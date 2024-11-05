@@ -1,0 +1,19 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: nov-redis
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      catalog: default-bitnami
+      chartName: redis
+      chartVersion: 20.2.1
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: nov-nginx
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-nov5
+  version: nov-redis-v1-202411050812580000
