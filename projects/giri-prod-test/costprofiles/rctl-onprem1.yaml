@@ -1,0 +1,17 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: rctl-onprem1
+  project: giri-prod-test
+spec:
+  installationParams:
+    other:
+      cpu: "0.2"
+      gpu: "0.5"
+      memory: "0.2"
+  providerType: other
+  sharing:
+    enabled: true
+    projects:
+    - name: giri-patch
+  version: v2

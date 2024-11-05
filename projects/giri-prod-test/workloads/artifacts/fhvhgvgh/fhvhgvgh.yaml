@@ -1,0 +1,146 @@
+apiVersion: v1
+data:
+  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURUVENDQWpVQ0FnUG9NQTBHQ1NxR1NJYjNEUUVCQ3dVQU1Hc3hDekFKQmdOVkJBWVRBbFZUTVJNd0VRWUQKVlFRSURBcERZV3hwWm05eWJtbGhNUkl3RUFZRFZRUUhEQWxUZFc1dWVYWmhiR1V4RGpBTUJnTlZCQW9NQlZKaApabUY1TVE0d0RBWURWUVFMREFWU1lXWmhlVEVUTUJFR0ExVUVBd3dLWjJoMloyNTJMbU52YlRBZ0Z3MHlOREExCk16QXdOVFUyTkRKYUdBOHlNRFUwTURVeU16QTFOVFkwTWxvd2F6RUxNQWtHQTFVRUJoTUNWVk14RXpBUkJnTlYKQkFnTUNrTmhiR2xtYjNKdWFXRXhFakFRQmdOVkJBY01DVk4xYm01NWRtRnNaVEVPTUF3R0ExVUVDZ3dGVW1GbQpZWGt4RGpBTUJnTlZCQXNNQlZKaFptRjVNUk13RVFZRFZRUUREQXBuYUhabmJuWXVZMjl0TUlJQklqQU5CZ2txCmhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBMWxuTnVVd3h3Qk5TSlFtTWh5ZE9COE1qbGJaeGFDYUkKNDVPbmlUTlJ4T2xCMWZFQURGVHNoSHVFM1VpRUlxOUF3VEVVTHZYTC80RHpOUkdLWEhUSVF3WkhHbzcwUTdiOQowMzhQaW9xUExmQXlRTXNPdFF4S0dLY2Q4OGNaYjdXZEJ5UzZqcS94cTJ4V25HYkVSRUxKMjg1VDdiNUtReGFiCmVpS25kS01sVVF1MzcvOVI1aGoxWUxvdTJ0a3Y3ZGlKOWN5UUpiS3ozVk4rejZ3aVVnUG9qQUJVSmpTR0xUSWsKR3U0dGh1eHJ3ejEvQW4weEZoNDBxSDVyOUVRNS9vN1QyWktSUVlpMzh3VnRLMU5oaG1PQ285bWtXbk8yTWM5SAo3aDVuV3UwbmNnckcxRjRIak1JR0NhOVQxbHMzRVI4cjUrb01HU1UrS3Fic0VLSEFLZWUrWFFJREFRQUJNQTBHCkNTcUdTSWIzRFFFQkN3VUFBNElCQVFCRTFaSHRlS0NxR1dOK3VrMUpBOE9EZjIwSGxwbUN2bGlZR0xUY2xhd1AKUmNRbzJ2YzVXRWF1ZHBGWkxncmdFNDNQVldDelcwemM5R0NhNUdTYlB2eldMa2JQM3l2S2dXbkpRYVVPRGlIKwp1VDNzWU1wSGtWbzdNZ0t6UC9wdXpWNlZIMkQwUkZDZFExN0x6cUhSSzJ6OGZseGFVL3NpMFcxTUloRVFwM3U4CkRQSXVVcVBUMCs3YVo5K3BqRDhuS0pDRkhFTHhhNFYwYXhJaXE5SXk4bzEyTTR5OGdKeGxDTWRFbUtGMSs1R1EKUGNnandTcGgzSDRtM1RVM0paVFQ3eGxNRC8wMXAyU0JQTW9oTWxZcTNWRUErZ2ZNMTFCa0IxVGpvbXZmS3p5YgpmazNPY3FzdHRDaVVWcDJxKzlteXNWalNGbDFDdVV4NmJzWVVEZTBRbzNITwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+  tls.key: c2VjcmV0c3RvcmU6cmttczpUK041YzZHSU5KYnM3dlJySWNmdGgwd01GMnI1TWEwVHhsMmdpRVZ4SGo5amMrNUpxL3o2S3FTb1AzZlpQR1pUUnFGc2JXajFTMGxoZWhTNzVnb1JUSFJwVmVFQTB0OFRmM1c0d1F3cVlFdU55T3pybXlBQVFJZDh2MTJtR0tDb1FSaGczK3E2MXhLNndHdlRSQ3RMZ29iVnkvL2JJZVhvY2xaRHk4UHNPK3cvTktUbm0ydmZSMkpwQ3RzZXp1dTBWMGZBNFpBSE1BYklMM0NFeUxDcFBJaDRZR3gwKzMzeGZOMDZQYUFFMHNRbFIwWkd5NzZvMWZhY29ZVnVpbWZrcVFCVSthTlpWcWh4MFpyTlFINUZQSkdQMDRaeVQ4VDlTL2RMSmZsK2NVU0ZyZ1VhblcrcjRCY3E1Zkl1VGp0OTRUVkdLRWx6NVY5Wk04aFdPdjFLdWh4ZGF1RVRnVUJpUXlDMWlpdnk1dzZZTGhwQ0VnbUhYckZleTBmVmJsMEM2NUhYVjFOdmR4R0RRajdKUkcweTVuaEhaeUovcXR4ekh2OGxwNEZmYXFjWVVNYlUzclRmOXB0Q1U3QXN4SkcwMmtzbTdlYXA3WU9URzAyL1hRalNCRjhpZE8yZCtjblJsSjhLTHI3SHNxNDJLT3lTUDR3a1djbEtTQXB1U3BCMGU2OTc3RE8rQVpiQUxlVUt1UWl0aUltVjJMaEZzR1Y0RTJNcGdZK2ZqZ2YvTkhlZmE4WVVRTGpnKzlpdWo4WXlTRXVISm14UkxzcTlPRVhCSVNJNUpkOUtWS05xd2NrWW1Cczl5bDhiR3JuaFp4ZEhCYktERXdXUXdPNm11K1BON3dvVmw4RjdlTW9yMW13Sk1OQjZnTExPYlp1S1loVVlXSVFML0lESmtKN2dKaUN3ZXpyRVA5dlNDNTBHY2Vxcm5Ia1laRVljc2tGSE01cElDT0dsRkhEYjFZbmJMUzZOUmgyMjNiZ3lDcWVwY3BSZlhsdmVONFZBYkV1Y29TWnNLT2lmWFFyUkkyWjhERGQwbjhMMWxXdkFjUks2eTdieWV0eXFCcU9pZWZaVkFCOXo2UFQrK3N4Ty95dzQ1dk1YTDVqb0t3dHozaTkxTUEvRnd2N2tCS3pOT3loWC9ndS9LbS9qMHhHaHpmOFl6cE9DdE05U1ljR0FhZWJMNGFzTFJjcFVSSTI3eFdZTDA3MWhmcDdiUk4yNnN5c2pYcEFDTEZxN3h0dk40QllvekdtdDlrMXYxbVVDekxUMExlbHpzblBPZ2cvakpXV0NQRXMyTGR0Z1dlN3B3dHczaTlSTENSNjlWaFBGZHFNMkZSTkFsSHBWNHM4a0RFVi9nV3FvOHR6UHJZcmlKT05UZGVYRW9ibXhQSGJiVmZSdVZDSUw1eDV4NnV4UFYyUVl1RGkvOFh2OENpNmwrV1JqRHJwWE1YT1cwQWxLMWs5R1JUblZ0d0tMeVZZYmpJeE9JaUExVXRsMVNGSWRDRitKYm1uM0xBcEpLWkswUWJ4aUZFKzA1cWtXMzkyWXN5R3JBdjdlWVFRYTVTd2E1Q3lzVkRjODRDbmQyM3J2Zm8zV1NDY2pvRCtISTZoTGFRNVdFUlFkaGQ3MFBwWUs1b2FLUnl4VTRJUHcwdzhrSlJWV2cwbmRKWkZMcW1GUFpUNTlUcGNNYURpdWVXQmwrSmxlaW03MnhNQVBJZndLRE1wZXNpQzI2bmlEbVF0WVpyUFgzcHBNSkcxcDdpbXBXWDV5ZUU2NS9wKzZKa1pQRXZaMUllTlRMZzRPaUovQ1lDOVczQUdTVXppczBIQXhFMEtDUUVTTGRYa254dkcxOEh3QjVpMWQ0Rng2S3VweWFXS1ByL1pweTdEeExJQ212eFhTM08wZ1Fua2hSL0dkdU9TdktyM251UTZHWVd1Um5hWmRIeWRIWTdnT0Y5MlhIMWtGSWhjTzdFUHVYNGFGN2J5K1NTSFlXbzJCczdLaGdNdjFIaTdnYjhIUDZ0MWVBdlRQTU5Zd3RNYnhPN2ZxNE1qbWYvcks4UDRwOERLUDk3UU5XZVE4ZkNKWFZEVVpobXFsT0ZNYXp2S0RKcTlMaThxTHhLTThLekRnRkt0K2F4Z0lqdEVZL2s5UGVMeFBBQlVnSDNoaTZEbDFUUEZHcFR0L1hqMzJCd0lkVGk2NUNBYXhPNXBLaEJqZGE5cDlEeUt1cGR5WndpRDhvRmhWZVB1UVJ6WENtWVBzUTRsVUpoTkcxUkY3MHNHNXJiV1ozbjJuNWNuMkgxdWh4VHdmVnJxblEvQU9yVFBSdWpxYnVTZklnUkFoYm1CbE9LUmtLang0YXZwYkdQaXlXcUdIUG5ZbEFnTy8vbkpidUttNXZRTWRqK0RMc25YVzdyc2lHajI0RWhQcTBvWGszcVZPNXJSMW9FalAwN3huYkFLZkFxSWZkeDQ3aTJadUdtUGh5MWc3MnB1U2hnblZpOUxKYzRwc2VYK0MzWHArb3hwU2FUMkYzVFU2RURiMVhYdzg2cUI4WXY4M1dZa09IM0lQTnp1ZzdEbzRLVytvMHFDVWFJQXNSTUg5Z1VvN0NZUXN1aHBWMVh2SlE1ZGZFYmdjbzAzSk13ZXRSVlBzS0xka1RQanVMMXJNQWkwekpDL1BzcW5ndkx0TFJyT0RxNndQVVZnUDFYQXhhVUM0SldmOTdFeThHZTF0NGhnVjhpbnhXNmtwdzZJTVZqN1BUVDZtdStoWVBJMW4rTXFqUUl1QzJZLzRBT2dkcks1OWdhd1V1N29pZVUvOU96NFNscnozcmJPZ3psdHdXOGtlV2x1ZzNNWkVsb0hsTGNLMmJTRE5xajZjbnA4N0VZZjZsL3d4U2RWRm1iOGtBdHl6Y2hpT3dWVDNaeWYxVk9GdDU5bUh3anJxY29STVUxQW5hdUtFQ05vb2oxcmlYODJGZDZyNzNBanlWbmhndWtVSFlIT016R0Z1TGZsRVh2ZjJYVnE5dndNbEUxQk5UT2FFa05JZnFPbkYwYUxrQy9OZk42UDdRTUM5ZlBjZS9GeXcwOEdPUXdRdE5YSUFmN2tsSlRxTUwxeWRrVDl5WVU5ZkN3PT0=
+kind: Secret
+metadata:
+  annotations:
+    rafay.dev/secretstore: rkms-secrets
+  labels:
+    rep-organization: 5m18rky
+    rep-partner: rx28oml
+    rep-version: rx28oml
+    rep-workload: kzjov56
+  name: kzjov56-jhjb-1021589543-ingress
+  namespace: may30
+type: kubernetes.io/tls
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    rep-container: kzjov56-jhhjg
+    rep-organization: 5m18rky
+    rep-partner: rx28oml
+    rep-version: rx28oml
+    rep-workload: kzjov56
+  name: jhhjg
+  namespace: may30
+spec:
+  ports:
+  - name: port-80-tcp
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    rep-app: jhhjg
+  type: ClusterIP
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    rafay.dev/registry-kzl0x32: system-default-registry
+  labels:
+    rep-app: jhhjg
+    rep-organization: 5m18rky
+    rep-partner: rx28oml
+    rep-workload: kzjov56
+  name: jhhjg
+  namespace: may30
+spec:
+  minReadySeconds: 10
+  progressDeadlineSeconds: 300
+  selector:
+    matchLabels:
+      rep-app: jhhjg
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations: {}
+      labels:
+        rep-app: jhhjg
+        rep-organization: 5m18rky
+        rep-partner: rx28oml
+        rep-workload: kzjov56
+    spec:
+      containers:
+      - args: []
+        command: []
+        env: []
+        envFrom: []
+        image: index.docker.io/nginx:latest
+        imagePullPolicy: IfNotPresent
+        name: jhhjg
+        ports:
+        - containerPort: 80
+          name: port-80-tcp
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 250m
+            memory: 1024Mi
+          requests:
+            cpu: 237m
+            memory: 972Mi
+      dnsPolicy: ClusterFirstWithHostNet
+      restartPolicy: Always
+      tolerations: []
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    nginx.ingress.kubernetes.io/configuration-snippet: set $workload_name "fhvhgvgh";set
+      $workloadId "kzjov56";set $orgId "5m18rky";set $partnerId "rx28oml";
+    rafay.dev/cname: ghvgnv-com.run.rafay-edge.net
+    rafay.dev/kubeVersionConstraint: '>=1.19.0'
+  name: jhjb
+  namespace: may30
+spec:
+  rules:
+  - host: ghvgnv.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: jhhjg
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - ghvgnv.com
+    secretName: kzjov56-jhjb-1021589543-ingress
+
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    nginx.ingress.kubernetes.io/configuration-snippet: set $workload_name "fhvhgvgh";set
+      $workloadId "kzjov56";set $orgId "5m18rky";set $partnerId "rx28oml";
+    rafay.dev/cname: ghvgnv-com.run.rafay-edge.net
+    rafay.dev/kubeVersionConstraint: <1.19.0
+  name: jhjb
+  namespace: may30
+spec:
+  rules:
+  - host: ghvgnv.com
+    http:
+      paths:
+      - backend:
+          serviceName: jhhjg
+          servicePort: 80
+        path: /
+  tls:
+  - hosts:
+    - ghvgnv.com
+    secretName: kzjov56-jhjb-1021589543-ingress

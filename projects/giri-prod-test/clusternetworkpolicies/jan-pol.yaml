@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: jan-pol
+  project: giri-prod-test
+spec:
+  rules:
+  - name: jan-rule
+    version: v1
+  version: v1

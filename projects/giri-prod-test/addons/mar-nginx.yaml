@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: mar-nginx
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/mar-nginx/nginx-15.4.2.tgz
+      valuesPaths:
+      - name: file://artifacts/mar-nginx/values.yaml
+    type: Helm
+  namespace: mar-nginx
+  sharing: {}
+  version: v1

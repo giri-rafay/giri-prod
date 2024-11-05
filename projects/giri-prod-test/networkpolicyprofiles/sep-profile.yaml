@@ -1,0 +1,9 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NetworkPolicyProfile
+metadata:
+  name: sep-profile
+  project: giri-prod-test
+spec:
+  installationParams:
+    policyEnforcementMode: never
+  version: version3

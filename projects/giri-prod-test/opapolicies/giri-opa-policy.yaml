@@ -1,0 +1,10 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: OPAPolicy
+metadata:
+  name: giri-opa-policy
+  project: giri-prod-test
+spec:
+  constraintList:
+  - name: allow-privilege-escalation-container
+    version: version-1696648076
+  version: v1

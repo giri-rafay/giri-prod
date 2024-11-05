@@ -1,0 +1,13 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicyRule
+metadata:
+  name: nov5-cr1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/nov5-cr1/untitled
+    options: {}
+    type: Yaml
+  version: v2

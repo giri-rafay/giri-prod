@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: a14
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact: {}
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: giri-apps
+  sharing: {}

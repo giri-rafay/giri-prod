@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: sep26-xwing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/sep26-xwing/sep26-xwing.yaml
+    type: Yaml
+  namespace: sep26
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-sep26
+  version: sep26-xwing-v2-202409260958000000

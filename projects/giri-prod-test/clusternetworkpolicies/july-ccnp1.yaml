@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: july-ccnp1
+  project: giri-prod-test
+spec:
+  rules:
+  - name: july-ccnp1
+    version: version1
+  version: version2

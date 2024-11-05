@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: a1-xewing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/a1-xewing/a1-xewing.yaml
+    type: Yaml
+  namespace: a1-xwing
+  placement:
+    selector: rafay.dev/clusterName=giri-apr-prod2
+  version: a1-xewing-v1-202404060812150000

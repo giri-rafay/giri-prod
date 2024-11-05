@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  labels:
+    rel: april
+  name: apr-xwing-addon
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/apr-xwing-addon/http-sw-app.yaml
+    type: Yaml
+  namespace: add-xwing-april
+  sharing: {}
+  version: v2

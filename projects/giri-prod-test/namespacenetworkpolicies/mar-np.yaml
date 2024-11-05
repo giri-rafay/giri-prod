@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NamespaceNetworkPolicy
+metadata:
+  name: mar-np
+  project: giri-prod-test
+spec:
+  rules:
+  - name: mar-np1
+    version: v0
+  version: v0

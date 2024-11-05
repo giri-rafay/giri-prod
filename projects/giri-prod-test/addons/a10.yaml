@@ -1,0 +1,17 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: a10
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/a10/cert-manager-v1.6.1.tgz
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: giri-apps
+  sharing: {}
+  version: v23

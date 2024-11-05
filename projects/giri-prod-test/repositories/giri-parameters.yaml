@@ -1,0 +1,20 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: giri-parameters
+  project: giri-prod-test
+spec:
+  agents:
+  - {}
+  credentials:
+    password: sealed://credentials.password
+    username: giri-rafay
+  endpoint: https://github.com/giri-rafay/parameters.git
+  options: {}
+  secret:
+    name: file://artifacts/giri-parameters/sealed-secret.yaml
+  type: Git
+status:
+  projects:
+  - projectId: d27q1rm
+    repositoryId: k5ddndm

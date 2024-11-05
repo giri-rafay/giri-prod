@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: d1
+  project: giri-prod-test
+spec:
+  active: true
+  cluster:
+    name: giri-azure-k8s
+  type: Cluster
+  version: r1.18.0

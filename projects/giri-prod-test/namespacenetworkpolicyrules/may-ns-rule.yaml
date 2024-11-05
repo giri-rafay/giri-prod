@@ -1,0 +1,13 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NamespaceNetworkPolicyRule
+metadata:
+  name: may-ns-rule
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/may-ns-rule/xwing-block-rule.yaml
+    options: {}
+    type: Yaml
+  version: v1

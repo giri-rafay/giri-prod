@@ -1,0 +1,33 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: may-addon
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/may-addon/redis-15.6.4.tgz
+      valuesPaths:
+      - name: file://artifacts/may-addon/values.yaml
+    options:
+      atomic: true
+      cleanUpOnFail: true
+      description: abcg
+      disableOpenAPIValidation: true
+      force: true
+      maxHistory: 1
+      noHooks: true
+      renderSubChartNotes: true
+      resetValues: true
+      reuseValues: true
+      setString:
+      - test
+      - test1
+      skipCRDs: true
+      timeout: 10s
+      wait: true
+    type: Helm
+  namespace: prod-ns
+  sharing: {}
+  version: v14

@@ -1,0 +1,15 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: OPAConstraint
+metadata:
+  name: ram-ns-label-opa-constraint
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/ram-ns-label-opa-constraint/ns-label-opa-constraint.yaml
+    options: {}
+    type: Yaml
+  published: true
+  templateName: ram-ns-label-opa-template
+  version: v1

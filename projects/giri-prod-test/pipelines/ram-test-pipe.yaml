@@ -1,0 +1,6 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: ram-test-pipe
+  project: giri-prod-test
+spec: {}

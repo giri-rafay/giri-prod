@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: mks-bp
+  project: giri-prod-test
+spec:
+  base:
+    name: default
+    version: 1.23.0
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+  driftWebhook:
+    enabled: true
+  networkPolicy:
+    profile:
+      name: default
+      version: latest
+  opaPolicy:
+    profile:
+      name: default
+      version: latest
+  serviceMesh:
+    profile:
+      name: istio-profile-minimal
+      version: version-1678511492
+  type: custom
+  version: v6

@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: nginx-redis
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      catalog: default-bitnami
+      chartName: redis
+      chartVersion: 18.7.1
+    type: Helm
+  namespace: jan-redis
+  sharing: {}
+  version: v1

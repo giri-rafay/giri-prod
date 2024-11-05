@@ -1,0 +1,16 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: rctl-aks
+  project: giri-prod-test
+spec:
+  installationParams:
+    azure:
+      customPricing:
+        cloudCredentialsName: aks-cost
+  providerType: azure
+  sharing:
+    enabled: true
+    projects:
+    - name: giri-patch
+  version: rctl-aks-version

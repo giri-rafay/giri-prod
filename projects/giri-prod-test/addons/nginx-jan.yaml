@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: nginx-jan
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/nginx-jan/nginx-15.4.2.tgz
+      valuesPaths:
+      - name: file://artifacts/nginx-jan/values.yaml
+    type: Helm
+  namespace: jan-nginx
+  sharing: {}
+  version: v1

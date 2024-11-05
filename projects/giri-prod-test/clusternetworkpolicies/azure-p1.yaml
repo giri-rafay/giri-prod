@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: azure-p1
+  project: giri-prod-test
+spec:
+  rules:
+  - name: azure-c1
+    version: v11
+  version: azure-pol1

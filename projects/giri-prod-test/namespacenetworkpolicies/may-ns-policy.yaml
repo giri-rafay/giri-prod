@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NamespaceNetworkPolicy
+metadata:
+  name: may-ns-policy
+  project: giri-prod-test
+spec:
+  rules:
+  - name: may-ns-rule
+    version: v1
+  version: v1

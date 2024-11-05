@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: may21-xwing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/may21-xwing/may21-xwing.yaml
+    type: Yaml
+  namespace: may22
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-may22
+  version: may21-xwing-v2-202405220047300000

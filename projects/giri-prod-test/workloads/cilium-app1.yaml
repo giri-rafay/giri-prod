@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: cilium-app1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/cilium-app1/cilium-app1.yaml
+    type: Yaml
+  namespace: apr16-redis
+  placement:
+    selector: rafay.dev/clusterName in (giri-aks-apr16,giri-prod-apr16)
+  version: cilium-app1-v2-202404161757400000

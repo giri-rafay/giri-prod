@@ -1,0 +1,13 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NamespaceNetworkPolicyRule
+metadata:
+  name: july-01-xwing-block-nrule
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/july-01-xwing-block-nrule/standard_cilium_networkpolicy.yaml
+    options: {}
+    type: Yaml
+  version: v1

@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: redis-prod
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/redis-prod/redis-15.6.4.tgz
+      valuesPaths:
+      - name: file://artifacts/redis-prod/values.yaml
+    type: Helm
+  namespace: prod-redis
+  sharing: {}
+  version: v1

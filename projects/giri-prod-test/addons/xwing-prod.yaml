@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: xwing-prod
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/xwing-prod/http-sw-app.yaml
+    type: Yaml
+  namespace: prod-xwing
+  sharing: {}
+  version: v2

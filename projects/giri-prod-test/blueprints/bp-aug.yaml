@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bp-aug
+  project: giri-prod-test
+spec:
+  base:
+    name: default-aks
+    version: 1.27.0
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  driftWebhook:
+    enabled: true
+  networkPolicy:
+    policies:
+    - name: july-ccnp1
+      version: version1
+    profile:
+      name: aug-profile
+      version: v1
+  type: custom
+  version: v4

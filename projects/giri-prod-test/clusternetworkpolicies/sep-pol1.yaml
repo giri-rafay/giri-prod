@@ -1,0 +1,12 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: sep-pol1
+  project: giri-prod-test
+spec:
+  rules:
+  - name: sep-1
+    version: v1
+  - name: prod-rule1
+    version: prod-version1
+  version: v1

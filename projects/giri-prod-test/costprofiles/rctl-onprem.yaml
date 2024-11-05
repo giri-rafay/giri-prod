@@ -1,0 +1,14 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: rctl-onprem
+  project: giri-prod-test
+spec:
+  installationParams:
+    other: {}
+  providerType: onprem
+  sharing:
+    enabled: true
+    projects:
+    - name: giri-patch
+  version: v2

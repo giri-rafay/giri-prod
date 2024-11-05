@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: helm-addon1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/helm-addon1/redis-15.6.4.tgz
+      valuesPaths:
+      - name: file://artifacts/helm-addon1/values.yaml
+    options:
+      description: abcd
+      timeout: 0s
+    type: Helm
+  namespace: helm
+  sharing: {}
+  version: v3

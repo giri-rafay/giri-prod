@@ -1,0 +1,45 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: july-aks-np
+  project: giri-prod-test
+spec:
+  base:
+    name: default-aks
+    version: 1.27.0
+  costProfile:
+    name: default-cost-profile-azure
+    version: version-1673434684
+  customAddons:
+  - name: redis
+    version: v1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  driftWebhook:
+    enabled: true
+  namespaceConfig:
+    enableSync: true
+    syncType: Managed
+  networkPolicy:
+    policies:
+    - name: july-ccnp1
+      version: version1
+    profile:
+      name: july-profile
+      version: version1
+  opaPolicy:
+    profile:
+      name: default
+      version: latest
+  serviceMesh:
+    profile:
+      name: istio-profile-minimal
+      version: version-1689111160
+  type: custom
+  version: all-redis1

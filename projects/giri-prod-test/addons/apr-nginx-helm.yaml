@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: apr-nginx-helm
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/apr-nginx-helm/nginx-15.4.2.tgz
+      valuesPaths:
+      - name: file://artifacts/apr-nginx-helm/values.yaml
+    type: Helm
+  namespace: apr-nginx-helm
+  sharing: {}
+  version: V2

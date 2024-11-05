@@ -1,0 +1,13 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicyRule
+metadata:
+  name: eks-cluster-rule
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/eks-cluster-rule/cluster-wide-rule.yaml
+    options: {}
+    type: Yaml
+  version: xwing-cluster-version1

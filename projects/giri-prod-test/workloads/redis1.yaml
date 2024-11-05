@@ -1,0 +1,19 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: redis1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      catalog: default-bitnami
+      chartName: redis
+      chartVersion: 19.1.0
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: apr16-redis
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-apr16
+  version: redis1-v1-202404161557140000

@@ -1,0 +1,19 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: tom
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartName: tomcat
+      chartVersion: 11.0.1
+      repository: default-bitnami
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: tomcat
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-new-apr17
+  version: tom-v1-202404171625120000

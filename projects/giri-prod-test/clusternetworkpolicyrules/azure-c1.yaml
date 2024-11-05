@@ -1,0 +1,17 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicyRule
+metadata:
+  name: azure-c1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/azure-c1/cluster-wide.yaml
+    options: {}
+    type: Yaml
+  sharing:
+    enabled: true
+    projects:
+    - name: amu
+  version: v11

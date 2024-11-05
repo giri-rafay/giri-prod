@@ -1,0 +1,44 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bp-all
+  project: giri-prod-test
+spec:
+  base:
+    name: default-aks
+    version: 1.28.0
+  costProfile:
+    name: default-cost-profile-azure
+    version: version-1697256653
+  customAddons:
+  - name: redis
+    version: v1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  driftWebhook:
+    enabled: true
+  namespaceConfig:
+    enableSync: true
+    syncType: Managed
+  networkPolicy:
+    policies:
+    - name: oct-p1
+      version: v1
+    profile:
+      name: oct
+      version: v1
+  opaPolicy:
+    opaPolicy:
+    - name: policy-privileged
+      version: version-1697256653
+    profile:
+      name: default
+      version: latest
+  type: custom
+  version: OLD

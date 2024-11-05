@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: july-01-xwing-block-cpol
+  project: giri-prod-test
+spec:
+  rules:
+  - name: july-01-xwing-block-crule
+    version: v2
+  version: v1

@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: fhvhgvgh
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/fhvhgvgh/fhvhgvgh.yaml
+    type: Yaml
+  namespace: may30
+  placement:
+    selector: rafay.dev/clusterName=giri-prod-may30
+  version: fhvhgvgh-v1-202405300557160000

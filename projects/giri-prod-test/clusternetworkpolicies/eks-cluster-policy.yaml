@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: eks-cluster-policy
+  project: giri-prod-test
+spec:
+  rules:
+  - name: eks-cluster-rule
+    version: xwing-cluster-version1
+  version: xwing-cluster-version3

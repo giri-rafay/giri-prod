@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: may18-xwing
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/may18-xwing/http-sw-app.yaml
+    type: Yaml
+  namespace: may18-ns1
+  sharing: {}
+  version: version1

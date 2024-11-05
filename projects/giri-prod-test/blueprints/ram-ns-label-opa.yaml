@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: ram-ns-label-opa
+  project: giri-prod-test
+spec:
+  base:
+    name: default
+    version: 1.23.0
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  driftWebhook:
+    enabled: true
+  opaPolicy:
+    opaPolicy:
+    - name: ram-ns-label
+      version: v1
+    profile:
+      name: default
+      version: latest
+  type: custom
+  version: v1

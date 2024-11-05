@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: np-bp-jul1
+  project: giri-prod-test
+spec:
+  base:
+    name: default-aks
+    version: 1.26.0
+  defaultAddons:
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
+  driftWebhook:
+    enabled: true
+  networkPolicy:
+    profile:
+      name: default
+      version: latest
+  sharing:
+    enabled: true
+    projects:
+    - name: defaultproject
+  type: custom
+  version: v3

@@ -1,0 +1,23 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  description: redis-v2
+  name: a1
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      chartPath:
+        name: file://artifacts/a1/redis-15.6.4.tgz
+      valuesPaths:
+      - name: file://artifacts/a1/values.yaml
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: giri-apps
+  sharing:
+    enabled: true
+    projects:
+    - name: giri-patch
+  version: v2

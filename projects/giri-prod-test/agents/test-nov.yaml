@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: test-nov
+  project: giri-prod-test
+spec:
+  active: true
+  cluster:
+    name: giri-prod-nov5
+  type: Cluster
+  version: r2.11.0

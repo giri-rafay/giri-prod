@@ -1,0 +1,14 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: patched-pipeline
+  project: giri-prod-test
+spec:
+  stages:
+  - config:
+      approvers:
+      - userName: giridharaprasad@rafay.co
+      timeout: 0s
+      type: Email
+    name: test
+    type: Approval

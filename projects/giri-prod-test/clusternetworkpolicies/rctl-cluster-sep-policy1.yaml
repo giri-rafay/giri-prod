@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: rctl-cluster-sep-policy1
+  project: giri-prod-test
+spec:
+  rules:
+  - name: rctl-sep-cluster-rule
+    version: rctl-cluster-sep-vers1
+  version: rctl-policy-sep-version1

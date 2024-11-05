@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: may18-nginx
+  project: giri-prod-test
+spec:
+  artifact:
+    artifact:
+      catalog: default-bitnami
+      chartName: nginx
+      chartVersion: 17.0.2
+    type: Helm
+  namespace: may18-ns2
+  sharing: {}
+  version: v1

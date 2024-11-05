@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: dec-policy
+  project: giri-prod-test
+spec:
+  rules:
+  - name: dec
+    version: v1
+  version: v1
